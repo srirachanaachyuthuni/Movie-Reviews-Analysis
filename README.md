@@ -1,4 +1,12 @@
-For merge_datasets.py:
+# Movie Reviews analysis
+
+* Two datasets – IMDb and MoveLens where integrated and inserted in MongoDB using Python and PyMongo.
+* K-means clustering technique was applied to find the optimal number of clusters as 3.
+* Apriori Algorithm was used with minimum support of 5 and found that the most frequent number of actors is 6.
+
+## Instructions for running the code is as follows:
+
+### For merge_datasets.py:
 Usage: python3 merge_datasets.py <directory containing the IMDb dataset> <directory containing the MovieLens dataset> [MongoDB connection string]
 
 Provide the following in the command-line arguments:
@@ -20,7 +28,7 @@ This program will create a MongoDB database named 'MapReduce' with the following
 This program was written by: Yash Karia
 
 
-For clustering.py:
+### For clustering.py:
 Usages:
 1. To run k-means for single k: python3 clustering.py --k <value of k> [MongoDB connection string]
 2. To see the SSE curve for k = 1 to k = 10: python3 clustering.py --sse [MongoDB connection string]
@@ -35,7 +43,7 @@ This program will read from the MongoDB database named 'MapReduce'. If the mode 
 This program was written by: Sri Rachana Achyuthuni with minor modifications by Yash Karia
 
 
-For frequent_itemset_mining.py:
+### For frequent_itemset_mining.py:
 Usage: python3 frequent_itemset_mining.py <value of minimum support> <maximum allowed size of itemset (0 for no limit)> [MongoDB connection string]
 
 Provide the following in the command-line arguments:
@@ -46,25 +54,25 @@ Provide the following in the command-line arguments:
 This program was written by: Yash Karia and Dhrumil Mehta
 
 
-For average_rating_per_user.py:
+### For average_rating_per_user.py:
 Usage: python3 average_rating_per_user.py
 
 This program was written by: Sri Rachana Achyuthuni
 
 
-For movies_per_genre.py:
+### For movies_per_genre.py:
 Usage: python3 movies_per_genre.py
 
 This program was written by: Sri Rachana Achyuthuni
 
 
-For movies_per_year.py:
+### For movies_per_year.py:
 Usage: python3 movies_per_year.py
 
 This program was written by: Sri Rachana Achyuthuni
 
 
-For pairwise_comparison.py:
+### For pairwise_comparison.py:
 Usage: python3 pairwise_comparison.py
 
 This program was written by: Dhrumil Mehta
